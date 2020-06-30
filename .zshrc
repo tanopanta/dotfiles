@@ -84,7 +84,7 @@ zinit cdclear -q
 # プロンプトのカスタマイズ
 setopt promptsubst
 zinit snippet OMZT::gnzh
-zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
+zinit light romkatv/powerlevel10k # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
 
 # 補完
 zinit light zsh-users/zsh-autosuggestions
@@ -98,3 +98,5 @@ zinit light zdharma/history-search-multi-word
 # 要 jq
 zinit light reegnz/jq-zsh-plugin
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

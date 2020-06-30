@@ -47,3 +47,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH=/home/taro/.local/bin:$PATH
+
+# goの設定
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# direnvの設定
+eval "$(direnv hook zsh)"

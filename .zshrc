@@ -38,3 +38,12 @@ setopt correct
 
 # 他のターミナルとヒストリーを共有
 setopt share_history
+
+
+# -------------
+
+# Pyenvの設定
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+export PATH=/home/taro/.local/bin:$PATH

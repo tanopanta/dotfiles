@@ -50,9 +50,12 @@ export PATH=/home/taro/.local/bin:$PATH
 # goの設定
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
-
+export GO111MODULE=on
 # direnvの設定
 eval "$(direnv hook zsh)"
+
+# ? を展開させない
+setopt nonomatch
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then

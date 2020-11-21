@@ -46,26 +46,29 @@ setw -g mouse on
 set -g default-terminal "screen-256color"
 
 # ステータスバーの色を設定する
-set-option -g status-style fg=white,bg=black
+set -g status-fg white
+set -g status-bg black
 
 # ウィンドウリストの色を設定する
-set-window-option -g window-status-style fg=cyan
-set-window-option -g window-status-style bg=default
-set-window-option -g window-status-style dim
-
+setw -g window-status-fg cyan
+setw -g window-status-bg default
+setw -g window-status-attr dim
 # アクティブなウィンドウを目立たせる
-set-window-option -g window-status-current-style fg=white
-set-window-option -g window-status-current-style bg=red
-set-window-option -g window-status-current-style bright
+setw -g window-status-current-fg white
+setw -g window-status-current-bg red
+setw -g window-status-current-attr bright
 
 # ペインボーダーの色を設定する
-set-option -g pane-border-style fg=green,bg=black
-
+set -g pane-border-fg green
+set -g pane-border-bg black
 # アクティブなペインを目立たせる
-set-option -g pane-active-border-style fg=white,bg=yellow
+set -g pane-active-border-fg white
+set -g pane-active-border-bg yellow
 
 # コマンドラインの色を設定する
-set-option -g message-style fg=white,bg=black,bright
+set -g message-fg white
+set -g message-bg black
+set -g message-attr bright
 
 # ステータスバーを設定する
 ## 左パネルを設定する
